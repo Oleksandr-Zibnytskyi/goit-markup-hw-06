@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>webstudio</title>
   </head>
-  <!-- body -->
+  <!-------------------- body ------------------------>
   <body class="body">
-    <!-- header -->
+    <!------------------------ header ---------------------------->
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -37,6 +37,16 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open-btn" type="button">
+          <svg
+            class="mobile-menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="menu-open-icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-contacts">
           <ul class="address-list">
             <li>
@@ -53,9 +63,8 @@
         </address>
       </div>
     </header>
-    <!-- main -->
-    <main>
-      <!-- section-one -->
+    <!---------------------- main ------------------>
+    <!-- <main>
       <section class="section-one">
         <div class="container">
           <h1 class="section-one-title">
@@ -65,9 +74,9 @@
             Order Service
           </button>
         </div>
-      </section>
-      <!-- section-two -->
-      <section class="section-two">
+      </section> -->
+    <!---------------------- section-two -------------------->
+    <!-- <section class="section-two">
         <div class="container">
           <h2 class="section-two-title-visually-hidden">Benefits</h2>
           <ul class="section-two-menu-benefits">
@@ -141,9 +150,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- section-three -->
-      <section class="section-three">
+      </section> -->
+    <!--------------------- section-three ----------------------->
+    <!-- <section class="section-three">
         <div class="container">
           <h2 class="section-three-title">Our Team</h2>
           <ul class="section-three-menu">
@@ -159,7 +168,7 @@
                         class="icon-section-three"
                         width="16"
                         height="16"
-                        aria-label="icon-antenna"
+                        aria-label="icon-instagram"
                       >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -171,7 +180,7 @@
                         class="icon-section-three"
                         width="16"
                         height="16"
-                        aria-label="icon-antenna"
+                        aria-label="icon-twitter"
                       >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
@@ -183,7 +192,7 @@
                         class="icon-section-three"
                         width="16"
                         height="16"
-                        aria-label="icon-antenna"
+                        aria-label="icon-afacebook"
                       >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
@@ -195,7 +204,7 @@
                         class="icon-section-three"
                         width="16"
                         height="16"
-                        aria-label="icon-antenna"
+                        aria-label="icon-linkedin"
                       >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -381,8 +390,8 @@
           </ul>
         </div>
       </section>
-      <!-- section-four -->
-      <section class="section-four">
+      <!-------------------- section-four ------------------------>
+    <!-- <section class="section-four">
         <div class="container">
           <h2 class="section-four-title">Our Portfolio</h2>
           <ul class="section-four-menu">
@@ -502,9 +511,9 @@
           </ul>
         </div>
       </section>
-    </main>
-    <!-- footer -->
-    <footer class="footer">
+    </main> -->
+    <!--------------------------- footer -------------------------->
+    <!-- <footer class="footer">
       <div class="container-footer">
         <div class="container-logo-footer">
           <a class="logo-footer-link" href="./index.html"
@@ -722,8 +731,107 @@
               <a class="feedback-send" href="accent-color">Privacy Policy</a>
             </label>
           </div>
+
           <button type="button" class="feedback-form-submit-btn">Send</button>
         </form>
+      </div>
+    </div> -->
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-wraper is-open">
+      <div class="mobile-menu-container container">
+        <button class="mobile-menu-close-button" type="button">
+          <svg
+            class="mobile-menu-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="mobile mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-novigation">
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container mobile-contacts-container">
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list list">
+              <li class="mobile-contacts-item">
+                <a href="tel:+110001111111" class="mobile-contacts-list link"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+
+              <li class="mobile-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts-list link"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-social-list list">
+            <li class="mobile-menu-social-link link">
+              <a class="mobile-menu-social-icon" href="">
+                <svg
+                  class="icon-section-three"
+                  width="24"
+                  height="24"
+                  aria-label="icon-antenna"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link link">
+              <a class="mobile-menu-social-icon" href="">
+                <svg
+                  class="icon-section-three"
+                  width="24"
+                  height="24"
+                  aria-label="icon-antenna"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link link">
+              <a class="mobile-menu-social-icon" href="">
+                <svg
+                  class="icon-section-three"
+                  width="24"
+                  height="24"
+                  aria-label="icon-antenna"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-link link">
+              <a class="mobile-menu-social-icon" href="">
+                <svg
+                  class="icon-section-three"
+                  width="24"
+                  height="16"
+                  aria-label="icon-antenna"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
