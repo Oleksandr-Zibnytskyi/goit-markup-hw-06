@@ -82,14 +82,7 @@ body {
   text-decoration: none;
 }
 
-.menu-list {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.address-list {
+.contacts-list {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -179,6 +172,9 @@ body {
   margin-left: auto;
 }
 
+.mobile-container-section-one {
+}
+
 .section-one-title {
   font-family: Roboto, sans-serif;
   color: #fff;
@@ -226,7 +222,7 @@ body {
   padding: 120px 0;
 }
 
-.section-two-title-visually-hidden {
+.section-two-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -617,8 +613,8 @@ body {
   margin-left: 16px;
 }
 
-.backdrop-is-open {
-  opacity: 1;
+.backdrop.is-open {
+  opacity: 0;
   visibility: visible;
   pointer-events: auto;
   position: fixed;
