@@ -46,7 +46,19 @@ a {
 text-decoration: none;
 }
 
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ration: 2) {
+.section-one {
+background-image: url("./images/people-office-desktop-2x.jpg");  
+}
+}
+
+
 /* ==================================MOBILE HEADER STYLES=============================== */
+.backdrop {
+  display: block;
+}
 
 .container {
   max-width: 320px;
@@ -75,8 +87,9 @@ text-decoration: none;
 }
 
 .page-header {
-margin-top: 16px;
-margin-bottom: 16px;
+    border-bottom: 1px solid #e7e9fc;
+    margin: 0 auto;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -394,6 +407,7 @@ row-gap: 48px;
 }
 
 .footer-par {
+  width: 264px;
 color: #F4F4FD;
     font-size: 16px;
     font-style: normal;
@@ -407,7 +421,6 @@ color: #F4F4FD;
 .container-footer {
 display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 72px;
 }
@@ -507,9 +520,9 @@ font-family: Roboto;
 }
 
 .footer-subscribe-form {
+  flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -986,6 +999,13 @@ display: flex;
   width: 100%;
 }
 
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; 
+}
+
+
 .modal {
   position: absolute;
   top: 50%;
@@ -1041,6 +1061,11 @@ display: flex;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+
+.feedback-form-field-wrapper-container {
+  margin-bottom: 24px;
+}
+
 
 .feedback-form-field-wrapper {
   margin-bottom: 8px;
@@ -1215,10 +1240,6 @@ display: flex;
   display: none;
 }
 
-.page-header {
-margin-top: 0px;
-margin-bottom: 0px;
-}
 
 .menu-list {
   display: flex;
@@ -1310,7 +1331,7 @@ flex-shrink: 0;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office-tablet.jpg);
+    url(../images/people-office-tablet.jpg);
   max-width: 768px;
 }
 
@@ -1530,11 +1551,7 @@ display: none;
   overflow: hidden;
 }
 
-.overlay {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
+
 
 .section-four-list-container {
   padding: 32px 16px;
@@ -1596,6 +1613,7 @@ padding: 96px 0;
 }
 
 .container-footer {
+align-items: baseline;
 display: flex; 
 flex-direction: row; 
 gap: 72px 24px;
@@ -1773,7 +1791,7 @@ align-items: start;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(/images/people-office-desktop.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2034,11 +2052,6 @@ align-items: start;
   overflow: hidden;
 }
 
-.overlay {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
 
 .section-four-list-container {
   padding: 32px 16px;
