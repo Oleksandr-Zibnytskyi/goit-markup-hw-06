@@ -1600,7 +1600,7 @@ display: flex;
 flex-direction: row; 
 gap: 72px 24px;
 width: 584px;
-
+flex-wrap: wrap;
 }
 
 
@@ -1638,8 +1638,6 @@ align-items: start;
 
 
 .footer-subscribe-form {
-display: flex;
-    gap: 24px;
     align-items: baseline;
 }
 
